@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour {
 
@@ -43,6 +44,11 @@ public class ScoreManager : MonoBehaviour {
             {
                 scoreLabel = GameObject.Find("EnemyCount").GetComponent<Text>();
             }
+        }
+
+        if(enemyCount >= 5)
+        {
+            SceneManager.LoadScene("Clear");
         }
     }
 }

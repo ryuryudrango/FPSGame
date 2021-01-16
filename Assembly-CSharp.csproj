@@ -88,6 +88,7 @@
     <Compile Include="Assets\FPSPackage\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\GunScript.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\MovingEnemyScript.cs" />
+    <Compile Include="Assets\FPSPackage\Scripts\MovingEnemyScript2.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\PlayerController.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\RetryManager.cs" />

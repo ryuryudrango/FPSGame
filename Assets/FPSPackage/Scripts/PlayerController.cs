@@ -26,8 +26,6 @@ public class PlayerController : MonoBehaviour
     // UnityStandardAssets.Characters.FirstPerson.FirstPersonController FirstPersonController;//こうやったら呼び出せる？
     float timeRunning = 0.0f;
     private AudioSource audioSource;
-    //public AudioClip jumpSound;
-    //public AudioClip cannotJump;
     private Vector3 position;
     private Vector3 velocity;
 
@@ -117,16 +115,7 @@ public class PlayerController : MonoBehaviour
             dir = new Vector3(0, 0, 0);//resetする
         }
 
-        Debug.Log("角度は" + dir);
+        //Debug.Log("角度は" + dir);
 
     }
-
-    //void OnCollisionEnter(Collision col)
-    //{
-    //    Debug.Log("Hit!");
-    //    if (col.gameObject.CompareTag("Target"))
-    //    {
-    //        Destroy(col.gameObject);
-    //    }
-    //}
 }

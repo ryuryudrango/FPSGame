@@ -30,7 +30,7 @@ public class BatteryScript : MonoBehaviour
             {
                 return;
             }
-            AudioSource.PlayClipAtPoint(healSound, new Vector3(1, 0, 0));//オーディオを違う位置から流す方法
+            AudioSource.PlayClipAtPoint(healSound, col.transform.position,10f);//オーディオを違う位置から流す方法
             //audioSource.PlayOneShot(healSound);
             Destroy(this.gameObject);//消える前に音を流さないと
             //this.gameObject.SetActive(false);

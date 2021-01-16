@@ -45,35 +45,12 @@ public class GunScript : MonoBehaviour {
             }
             else
             {
-                audioSource.PlayOneShot(cannotReload);
+                Reload();
             }
         }
         if (Input.GetKeyDown(KeyCode.R))//Rキーが押されたらリロード
         {
-            if (remaining >= magazineSize)//フルでリロードできる時
-            {
-                remaining = currentMagazine + remaining - magazineSize;//残り弾薬数
-                currentMagazine = magazineSize;//リロード完了
-            }
-            else if (remaining > 0 && remaining < magazineSize)//フルではできない時
-            {
-                if (currentMagazine + remaining >= 10)
-                {
-                    remaining = currentMagazine + remaining - magazineSize;//残り弾薬数
-                    currentMagazine = magazineSize;//リロード完了
-                }
-                else
-                {
-                    currentMagazine = currentMagazine + remaining;
-                    remaining = 0;
-                }
-            }
-            else
-            {
-                audioSource.PlayOneShot(cannotReload);
-                return;
-            }
-            audioSource.PlayOneShot(reload); //reloadを鳴らす
+            Reload();
             /*
             if(currentMagazine + remaining <= 0)
             {
@@ -90,7 +67,7 @@ public class GunScript : MonoBehaviour {
 	void Shot(){
         currentMagazine--;
         Vector3 center = new Vector3(Screen.width / 2, Screen.height / 2, 0);
-        Ray ray = Camera.main.ScreenPointToRay(center);
+        Ray ray = Camera.main.ScreenPointToRay(center);//画面の真ん中にRayを飛ばす
         float distance = 100;
         if (Physics.Raycast(ray,out hit,distance))
         {
@@ -100,6 +77,41 @@ public class GunScript : MonoBehaviour {
                 hit.collider.SendMessage("Damage");
             }
         }
+        
+    }
 
-	}
+    // 銃をうつ時に行いたいことをこの中に書く
+    void Reload()
+    {
+        if(currentMagazine == magazineSize)
+        {
+            audioSource.PlayOneShot(cannotReload);
+            return;
+        }
+
+        if (remaining >= magazineSize)//フルでリロードできる時
+        {
+            remaining = currentMagazine + remaining - magazineSize;//残り弾薬数
+            currentMagazine = magazineSize;//リロード完了
+        }
+        else if (remaining > 0 && remaining < magazineSize)//フルではできない時
+        {
+            if (currentMagazine + remaining >= 10)
+            {
+                remaining = currentMagazine + remaining - magazineSize;//残り弾薬数
+                currentMagazine = magazineSize;//リロード完了
+            }
+            else
+            {
+                currentMagazine = currentMagazine + remaining;
+                remaining = 0;
+            }
+        }
+        else
+        {
+            audioSource.PlayOneShot(cannotReload);
+            return;
+        }
+        audioSource.PlayOneShot(reload); //reloadを鳴らす
+    }
 }

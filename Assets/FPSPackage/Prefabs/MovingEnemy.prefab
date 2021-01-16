@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 11411844}
   - component: {fileID: 19566206}
   - component: {fileID: 11493486}
+  - component: {fileID: 2009492786}
   m_Layer: 9
   m_Name: MovingEnemy
   m_TagString: Enemy
@@ -573,9 +574,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155226}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcbce2c3bbefe40258a997da97f7c71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2009492786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feddff34cba36446e93d2d3ac88ac169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &158554
@@ -1124,6 +1137,34 @@ PrefabInstance:
     - target: {fileID: 454518, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895632, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895632, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.0020024881
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895632, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.060540695
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895632, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.14150941
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895632, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895632, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895632, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: ShapeModule.type
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
