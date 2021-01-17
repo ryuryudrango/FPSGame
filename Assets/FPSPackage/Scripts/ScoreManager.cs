@@ -2,18 +2,21 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;//これをやると見つけてくれる
 
 public class ScoreManager : MonoBehaviour {
 
 	public static ScoreManager instance;
 	public int enemyCount = 0; //敵を倒した数
 	public Text scoreLabel; //UIテキスト
+    public GameObject clearPanel;//クリアした時に出るパネル
+    public GameObject Player;//playerにfpsControllerがついている
 
 
 	void Awake(){
 		if (instance == null) {
 			instance = this;
-			DontDestroyOnLoad (this.gameObject);
+			//DontDestroyOnLoad (this.gameObject);
 		} else {
 			Destroy (this.gameObject);
 		}
@@ -21,6 +24,8 @@ public class ScoreManager : MonoBehaviour {
 
     void Start()
     {
+        clearPanel.SetActive(false);//最初非表示
+       
         if (scoreLabel == null)
         {
             if (GameObject.Find("EnemyCount"))
@@ -48,7 +53,16 @@ public class ScoreManager : MonoBehaviour {
 
         if(enemyCount >= 5)
         {
-            SceneManager.LoadScene("Clear");
+            clearPanel.SetActive(true);//クリア画面表示
+            Player.GetComponent<FirstPersonController>().enabled = false;
+            
+            if ((Input.GetKeyDown(KeyCode.Space)))
+            {
+                enemyCount = 0;
+                Player.GetComponent<FirstPersonController>().enabled = true;
+                clearPanel.SetActive(false);//クリア画面表示
+                SceneManager.LoadScene("APEX");     
+            }
         }
     }
 }

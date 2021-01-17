@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 480510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: defM_thigh_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431490}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_shoulder_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: defM_forearm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: defM_shin_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_toe_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 487542}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417492}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: defM_thigh_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431638}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484266}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_upperArmCloth_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461498}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: defM_shin_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430292}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_upperArmCloth_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 19566206}
   - component: {fileID: 11493486}
   - component: {fileID: 2009492786}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: MovingEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 410532}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420814}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: defM_forearm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479324}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_toe_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 424336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_foot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 495836}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_shoulder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440308}
   - component: {fileID: 9565564}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PreFab-CartoonyBusinessZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 487414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_foot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 450748}
   - component: {fileID: 13724124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Group31640_000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: def_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,6 +1093,10 @@ PrefabInstance:
     - target: {fileID: 135108, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
       propertyPath: m_Name
       value: BlueParticleSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 135108, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 454518, guid: 8e649d28a25f44a3e9a0e99f6eefef49, type: 3}
       propertyPath: m_LocalPosition.x

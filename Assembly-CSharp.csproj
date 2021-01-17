@@ -83,6 +83,7 @@
     <Compile Include="Assets\FPSPackage\Scripts\AmoScript.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\BatteryScript.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\Cursorlock.cs" />
+    <Compile Include="Assets\FPSPackage\Scripts\DestroyByTime.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\FPSPackage\Scripts\FirstPersonController.cs" />

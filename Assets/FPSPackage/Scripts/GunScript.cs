@@ -75,9 +75,8 @@ public class GunScript : MonoBehaviour {
             if (hit.collider.tag=="Enemy")
             {
                 hit.collider.SendMessage("Damage");
-            }
+            }　
         }
-        
     }
 
     // 銃をうつ時に行いたいことをこの中に書く

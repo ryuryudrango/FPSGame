@@ -20,7 +20,7 @@ public class MovingEnemyScript2 : MonoBehaviour
 	void Update()
 	{
 		distance = Mathf.Sqrt(Mathf.Pow((player.transform.position.x - this.transform.position.x), 2) + Mathf.Pow((player.transform.position.y - this.transform.position.y), 2));
-		Debug.Log(distance);
+		//Debug.Log(distance);
 		if (distance < maxDistance)
         {
 			// 目的地をプレイヤーに設定する。

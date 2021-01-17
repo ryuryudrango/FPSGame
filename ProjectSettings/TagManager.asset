@@ -15,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - Rader
-  - NotRader
+  - OnlyRader
+  - OnlyPlayerCamera
   - Ground
   - 
   - 
