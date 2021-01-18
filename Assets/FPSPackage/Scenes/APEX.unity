@@ -2886,6 +2886,7 @@ MonoBehaviour:
   scoreLabel: {fileID: 965004936}
   clearPanel: {fileID: 1785986416}
   Player: {fileID: 244428783}
+  Pistol: {fileID: 579284205}
 --- !u!1 &978466740
 GameObject:
   m_ObjectHideFlags: 0

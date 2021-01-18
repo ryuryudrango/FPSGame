@@ -11,6 +11,7 @@ public class ScoreManager : MonoBehaviour {
 	public Text scoreLabel; //UIテキスト
     public GameObject clearPanel;//クリアした時に出るパネル
     public GameObject Player;//playerにfpsControllerがついている
+    public GameObject Pistol;//
 
 
 	void Awake(){
@@ -53,16 +54,23 @@ public class ScoreManager : MonoBehaviour {
 
         if(enemyCount >= 5)
         {
-            clearPanel.SetActive(true);//クリア画面表示
-            Player.GetComponent<FirstPersonController>().enabled = false;
-            
-            if ((Input.GetKeyDown(KeyCode.Space)))
-            {
-                enemyCount = 0;
-                Player.GetComponent<FirstPersonController>().enabled = true;
-                clearPanel.SetActive(false);//クリア画面表示
-                SceneManager.LoadScene("APEX");     
-            }
+            Clear();
+        }
+    }
+
+    void Clear()
+    {
+        clearPanel.SetActive(true);//クリア画面表示
+        Player.GetComponent<FirstPersonController>().enabled = false;
+        Pistol.GetComponent<GunScript>().enabled = false;
+
+        if ((Input.GetKeyDown(KeyCode.Space)))
+        {
+            enemyCount = 0;
+            Player.GetComponent<FirstPersonController>().enabled = true;
+            Pistol.GetComponent<GunScript>().enabled = true;
+            clearPanel.SetActive(false);//クリア画面表示
+            SceneManager.LoadScene("APEX");
         }
     }
 }
