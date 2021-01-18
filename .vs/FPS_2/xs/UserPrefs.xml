@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{8C9F53D0-4DB9-9ADA-3409-D14727F8BC45}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FPSPackage/Scripts/ScoreManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FPSPackage/Standard Assets/Utility/SimpleActivatorMenu.cs">
     <Files>
       <File FileName="Assets/FPSPackage/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs" Line="1" Column="1" IsPinned="True" />
       <File FileName="Assets/FPSPackage/Scripts/RetryManager.cs" IsPinned="True" />
@@ -17,11 +17,13 @@
       <File FileName="Assets/FPSPackage/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs" />
       <File FileName="Assets/FPSPackage/Scripts/MovingEnemyScript2.cs" />
       <File FileName="Assets/FPSPackage/Scripts/FirstPersonController.cs" />
+      <File FileName="Assets/FPSPackage/Standard Assets/Utility/ForcedReset.cs" Line="6" Column="1" />
+      <File FileName="Assets/FPSPackage/Standard Assets/Utility/SimpleActivatorMenu.cs" Line="10" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="28156255-df4c-406c-abf1-0391e0d16659" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="117f4979-9cdd-492a-af80-128d4907eb50" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
