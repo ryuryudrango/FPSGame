@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/FPSPackage/Scenes/APEX.unity
+    guid: e1159a7fded3144169edea1d6b0ca48f
+  - enabled: 1
     path: Assets/FPSPackage/Scenes/GameOver.unity
     guid: 642432bfacf124942844840c8a8d66f1
-  - enabled: 1
+  - enabled: 0
     path: Assets/FPSPackage/Scenes/Main.unity
     guid: 1900036ab41f6403687846e285de6e56
   m_configObjects: {}

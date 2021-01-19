@@ -12,6 +12,9 @@ public class ScoreManager : MonoBehaviour {
     public GameObject clearPanel;//クリアした時に出るパネル
     public GameObject Player;//playerにfpsControllerがついている
     public GameObject Pistol;//
+    AudioSource audioSource;
+    public AudioClip clearSound;
+    bool isCalledOnce = false;
 
 
 	void Awake(){
@@ -26,7 +29,7 @@ public class ScoreManager : MonoBehaviour {
     void Start()
     {
         clearPanel.SetActive(false);//最初非表示
-       
+        audioSource = GetComponent<AudioSource>();
         if (scoreLabel == null)
         {
             if (GameObject.Find("EnemyCount"))
@@ -54,7 +57,23 @@ public class ScoreManager : MonoBehaviour {
 
         if(enemyCount >= 5)
         {
-            Clear();
+            if (!isCalledOnce)
+            {
+                isCalledOnce = true;
+                Clear();
+            }
+            else
+            {
+                if ((Input.GetKeyDown(KeyCode.Space)))
+                {
+                    Player.GetComponent<FirstPersonController>().enabled = true;
+                    Pistol.GetComponent<GunScript>().enabled = true;
+                    clearPanel.SetActive(false);//クリア画面表示
+                    SceneManager.LoadScene("APEX");
+                    enemyCount = 0;
+                }
+            }
+            
         }
     }
 
@@ -63,14 +82,6 @@ public class ScoreManager : MonoBehaviour {
         clearPanel.SetActive(true);//クリア画面表示
         Player.GetComponent<FirstPersonController>().enabled = false;
         Pistol.GetComponent<GunScript>().enabled = false;
-
-        if ((Input.GetKeyDown(KeyCode.Space)))
-        {
-            enemyCount = 0;
-            Player.GetComponent<FirstPersonController>().enabled = true;
-            Pistol.GetComponent<GunScript>().enabled = true;
-            clearPanel.SetActive(false);//クリア画面表示
-            SceneManager.LoadScene("APEX");
-        }
+        audioSource.PlayOneShot(clearSound);
     }
 }
