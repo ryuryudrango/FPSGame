@@ -3,18 +3,24 @@ using System.Collections;
 
 public class Cursorlock : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+		
+	}
+    // Use this for initialization
+    void Start () {
 		// マウスカーソルを画面内にロックする。
-		Screen.lockCursor = true;
-//		Cursor.lockState = CursorLockMode.Locked;
+		//Screen.lockCursor = true;
+		Debug.Log(Cursor.visible);
+		Cursor.lockState = CursorLockMode.Locked;
 		// マウスカーソルを消去する
 		Cursor.visible = false;
+		Debug.Log(Cursor.visible);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	// ダメージを与えられた時、カメラを揺らす

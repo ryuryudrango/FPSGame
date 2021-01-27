@@ -11,6 +11,7 @@ public class BatteryScript : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
+
     }
 
     void OnTriggerEnter(Collider col)
