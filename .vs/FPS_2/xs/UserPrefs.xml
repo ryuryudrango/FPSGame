@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{8C9F53D0-4DB9-9ADA-3409-D14727F8BC45}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FPSPackage/Scripts/Cursorlock.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FPSPackage/Scripts/BatteryScript.cs">
     <Files>
       <File FileName="Assets/FPSPackage/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs" Line="1" Column="1" IsPinned="True" />
       <File FileName="Assets/FPSPackage/Scripts/RetryManager.cs" IsPinned="True" />
@@ -11,8 +11,8 @@
       <File FileName="Assets/FPSPackage/Scripts/MovingEnemyScript.cs" />
       <File FileName="Assets/FPSPackage/Scripts/ScoreManager.cs" />
       <File FileName="Assets/FPSPackage/Standard Assets/ParticleSystems/Scripts/ParticleSystemMultiplier.cs" />
-      <File FileName="Assets/FPSPackage/Scripts/AmoScript.cs" Line="23" Column="1" />
-      <File FileName="Assets/FPSPackage/Scripts/BatteryScript.cs" Line="14" Column="1" />
+      <File FileName="Assets/FPSPackage/Scripts/AmoScript.cs" Line="26" Column="7" />
+      <File FileName="Assets/FPSPackage/Scripts/BatteryScript.cs" Line="30" Column="10" />
       <File FileName="Assets/FPSPackage/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" />
       <File FileName="Assets/FPSPackage/Scripts/PlayerController.cs" />
       <File FileName="Assets/FPSPackage/Scripts/MovingEnemyScript2.cs" />
@@ -24,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="709b24c2-4cb4-4fa6-99ed-c22128edcd4d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="92b501f7-38a8-43f4-8e02-d82e5f832271" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

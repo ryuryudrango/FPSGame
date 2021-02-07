@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 221463096}
   - component: {fileID: 221463097}
   m_Layer: 5
-  m_Name: HPslider
+  m_Name: HPSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9397,7 +9397,7 @@ GameObject:
   - component: {fileID: 2010488598}
   - component: {fileID: 2010488597}
   m_Layer: 5
-  m_Name: HPbar
+  m_Name: HPBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

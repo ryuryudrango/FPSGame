@@ -5,14 +5,8 @@ using UnityEngine;
 public class BatteryScript : MonoBehaviour
 {
     public PlayerScript playerScript;
-    AudioSource audioSource;
     public AudioClip healSound;
-
-    void Start()
-    {
-        audioSource = gameObject.AddComponent<AudioSource>();
-
-    }
+    
 
     void OnTriggerEnter(Collider col)
     {
@@ -32,13 +26,19 @@ public class BatteryScript : MonoBehaviour
                 return;
             }
             AudioSource.PlayClipAtPoint(healSound, col.transform.position,10f);//オーディオを違う位置から流す方法
-            //audioSource.PlayOneShot(healSound);
-            Destroy(this.gameObject);//消える前に音を流さないと
-            //this.gameObject.SetActive(false);
-            //StartCoroutine("DelayMethod");
+            Destroy(this.gameObject);//消える前に音を流さないと(コルーチンもありかも)
         }
-        // 自分は消える
     }
+
+
+    //audioSource.PlayOneShot(healSound);を使う場合はaudiosourceの定義とコンポーネント追加がいる
+    //AudioSource audioSource;
+
+    //void Start()
+    //{
+    //    audioSource = gameObject.AddComponent<AudioSource>();
+
+    //}
 
     //private IEnumerator DelayMethod()
     //{
